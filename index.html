@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tezkor Yordam</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Tezkor Yordam</h1>
+    </header>
+    
+    <main>
+        <section id="services" class="card">
+            <h2>Xizmatlar</h2>
+            <ul>
+                <li><a href="#emergency">Favqulodda holatlar</a></li>
+                <li><a href="#location">Joriy joylashuv</a></li>
+                <li><a href="#website">Websayt va Logo olish</a></li>
+            </ul>
+        </section>
+
+        <section id="emergency" class="card">
+            <h2>Favqulodda Holatlar</h2>
+            <p>Favqulodda vaziyatlarda kerakli telefon raqamlar:</p>
+            <ul>
+                <li>
+                    <a href="tel:102" class="phone-link">
+                        <img src="image.png" alt="Phone Icon" class="phone-icon"> Politsiya: 102
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:103" class="phone-link">
+                        <img src="image.png" alt="Phone Icon" class="phone-icon"> Tez tibbiy yordam: 103
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:101" class="phone-link">
+                        <img src="image.png" alt="Phone Icon" class="phone-icon"> O‘t o‘chiruvchilar: 101
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="location" class="card">
+            <h2>Joriy Joylashuv</h2>
+            <button id="get-location">Joriy joylashuvni ko'rsatish</button>
+            <div id="map" style="height: 400px; width: 100%;"></div>
+            <p id="location-info"></p>
+        </section>
+
+        <section id="website" class="card">
+            <h2>Websayt va Logo olish</h2>
+            <p>Yana bir ko'plab tajribamni keltirib, sizga xizmat ko'rsatuvchi websayt va logoni yaratish imkoniyatlari haqida ma'lumot beraman:</p>
+            <div class="profile">
+                <img src="my-logo.png" alt="My Logo" class="profile-logo">
+                <div class="profile-info">
+                    <h3>Ismim: [Sizning Ismingiz]</h3>
+                    <p>Tajribam: [Tajribangiz haqidagi qisqa ma'lumot]</p>
+                    <p>Telegram: <a href="https://t.me/yourtelegram" target="_blank">/yourtelegram</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>
